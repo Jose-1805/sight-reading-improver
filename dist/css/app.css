@@ -1,0 +1,90 @@
+@font-face{
+	font-family: 'music';
+	src: url(../font/hymnus_fg/Hymnus212.ttf) format("truetype");
+}
+
+@font-face{
+	font-family: 'musiqwik';
+	src: url(../font/musiqwik/MusiQwik.ttf) format("truetype");
+}
+
+@font-face{
+	font-family: 'musiqwikb';
+	src: url(../font/musiqwik/MusiQwikB.ttf) format("truetype");
+}
+
+@font-face{
+	font-family: 'musisync';
+	src: url(../font/musisync/MusiSync.ttf) format("truetype");
+}
+
+.music{
+	font-family: 'music';
+	font-size: 70px;
+}
+
+.musiqwik{
+	font-family: 'musiqwik';
+	font-size: 70px;
+}
+
+.musiqwikb{
+	font-family: 'musiqwikb';
+	font-size: 70px;
+}
+
+.musisync{
+	font-family: 'musisync';
+	font-size: 50px;	
+}
+
+.cursor-pointer{
+	cursor: pointer !important;
+}
+
+.contenedor-pentagrama{
+	max-width: 100% !important;
+	min-width: 100% !important;
+	overflow-x: auto;
+	overflow-y: hidden;
+}
+
+.pentagrama{
+	min-width: 1050px !important;
+	max-width: 1050px !important;
+	word-wrap: normal !important;
+	word-break: normal !important;
+	overflow-wrap: normal !important;
+	padding-bottom: 120px !important;
+}
+
+.linea_pentagrama{
+	min-width: 105%;
+}
+
+#controles{
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	background-color: #3e3b3b;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	border-top: 3px solid #28a745;
+}
+
+.btn-back{
+	position: fixed;
+	top: 10px;
+	left: 10px;
+	z-index: 1 !important;
+}
+
+.no-click{
+	pointer-events: none !important;
+}
+
+.btn-instrumentos{
+	position: fixed;
+	right: 10px;
+	bottom: 120px;
+}

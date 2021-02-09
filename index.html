@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<html lang="EN">
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Sight Reading Improver</title>
+		<link rel="stylesheet" type="text/css" href="lib/bootstrap4.1.0/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="dist/css/helpers.css">
+		<link rel="stylesheet" type="text/css" href="dist/css/app.css">
+	</head>
+	<body>
+		<div class="container-fluid">	
+			<div class="row">
+				<h2 class="col-12 text-center padding-top-30 border-bottom">SIGHT READING IMPROVER</h2>
+				<div class="col-12 col-md-10 offset-md-1" style="padding-bottom: 120px !important;">
+					<div class="row">
+						<div class="col-12 col-md-9">
+							<div w3-include-html="resources/views/params/figuras.html"></div>
+						</div>
+
+						<div class="col-12 col-md-3">
+							<div w3-include-html="resources/views/params/tempo.html"></div>
+						</div>
+
+						<div class="col-12 col-lg-6">
+							<div w3-include-html="resources/views/params/rango.html"></div>
+						</div>
+
+						<div class="col-12 col-md-3">
+							<div w3-include-html="resources/views/params/clave.html"></div>
+						</div>
+
+						<div class="col-12 col-md-3">
+							<div w3-include-html="resources/views/params/tiempo.html"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="text-center" id="controles">
+					<a class="btn btn-success white-text disabled"><i class="fas fa-fast-backward"></i></a>
+					<a href="pentagrama.html" class="btn btn-success white-text"><i class="fas fa-play"></i></a>
+					<a class="btn btn-success white-text disabled"><i class="fas fa-pause"></i></a>
+					<a class="btn btn-success white-text disabled"><i class="fas fa-stop"></i></a>
+				</div>
+			</div>
+			<div w3-include-html="all_figures.html"></div>
+		</div>
+	</body>
+
+	<script type="text/javascript" src="lib/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="dist/js/app.js"></script>
+	<script type="text/javascript" src="lib/bootstrap4.1.0/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="lib/fontawesome-free-5.0.10/svg-with-js/js/fontawesome-all.min.js"></script>
+	<script type="text/javascript" src="lib/audiosynth.js"></script>
+	<script type="text/javascript" src="dist/js/index.js"></script>
+</html>

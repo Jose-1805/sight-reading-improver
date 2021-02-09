@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<html lang="EN">
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Sight Reading Improver</title>
+		<link rel="stylesheet" type="text/css" href="lib/bootstrap4.1.0/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="dist/css/helpers.css">
+		<link rel="stylesheet" type="text/css" href="dist/css/app.css">
+	</head>
+	<body>
+		<div class="container-fluid">	
+			<div class="row">
+				<a href="index.html" class="btn btn-primary btn-back"><i class="fas fa-arrow-left left"></i></a>
+				<div class="btn-group-vertical btn-group-toggle btn-instrumentos d-none" data-toggle="buttons">
+					<label class="btn btn-primary active btn-instrumento" data-option="piano">
+					<input type="radio" name="options" autocomplete="off" checked> Piano
+					</label>
+					<label class="btn btn-primary btn-instrumento" data-option="acoustic">
+					<input type="radio" name="options" autocomplete="off"> Acoustic
+					</label>
+					<!--<label class="btn btn-primary btn-instrumento" data-option="organ"">
+					<input type="radio" name="options" autocomplete="off"> Organ
+					</label>-->
+					<label class="btn btn-primary btn-instrumento" data-option="edm">
+					<input type="radio" name="options" autocomplete="off"> Edm
+					</label>
+				</div>
+				<h2 class="col-12 text-center padding-top-50 no-click border-bottom">SIGHT READING IMPROVER</h2>
+				<div class="col-12 col-md-10 offset-md-1">
+					
+					<div class="card">
+						<div class="card-header">
+							<p class="card-title text-center">Melody</p>
+						</div>
+						<div class="card-body">
+							<div class="contenedor-pentagrama">
+								<div class="pentagrama">
+								</div>
+							</div>
+							<div class="alert alert-danger d-none" role="alert" id="alerta-melodia">
+							  Lo sentimos, no hemos logrado generar la melodia correctamente con los parametros seleccionados en la primera vista. Por favor recargue la página, si el error persiste regrese a la vista anterior y cambie los parametros.
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="text-center" id="controles">
+					<a class="btn btn-success white-text" id="btn-backward"><i class="fas fa-fast-backward"></i></a>
+					<a class="btn btn-success white-text" id="btn-play"><i class="fas fa-play"></i></a>
+					<a class="btn btn-success white-text" id="btn-pause"><i class="fas fa-pause"></i></a>
+					<a class="btn btn-success white-text" id="btn-stop"><i class="fas fa-stop"></i></a>
+
+					<a class="btn btn-primary right margin-right-10 btn-toggle-instruments" data-toggle="tooltip" data-placement="left" title="Instruments"><i class="fas fa-box-open white-text"></i></a>
+				</div>
+				<audio src="dist/sounds/metro_mine/MetroBar1.wav" id="metro_bar"></audio>
+				<audio src="dist/sounds/metro_mine/MetroBeat1.wav" id="metro_beat"></audio>
+			</div>
+		</div>
+	</body>
+
+	<script type="text/javascript" src="lib/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="dist/js/app.js"></script>
+	<script type="text/javascript" src="lib/bootstrap4.1.0/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="lib/fontawesome-free-5.0.10/svg-with-js/js/fontawesome-all.min.js"></script>
+	<script type="text/javascript" src="lib/audiosynth.js"></script>
+	<script type="text/javascript" src="dist/js/params.js"></script>
+	<script type="text/javascript" src="dist/js/pentagrama.js"></script>
+	<script type="text/javascript" src="dist/js/controls.js"></script>
+</html>
